@@ -1,0 +1,118 @@
+
+*{
+    margin: 0%;
+    color: aliceblue;
+    font-family: monospace;
+}
+
+body{
+    background-color: rgb(19, 17, 17);
+    overflow: hidden;
+}
+
+h1{
+    position: relative;
+    margin-left: 10px;
+    top: 20vh;
+   width: 26ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-size: 3.2em;
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+#description{
+    background-color: rgba(53, 54, 54, 0.507);
+    width: 45%;
+    position: relative;
+    top: 24vh;
+    font-size: 21px;
+    line-height: 33px;
+    border-radius: 12px;
+    border: 0.01px wheat;
+    margin-top: 3px;
+    margin-left: 10px;
+    padding-left: 8px;
+    animation-name: textAnimation;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-direction: forwards;
+}
+
+
+#myPhoto{
+height: 400px;
+width: 320px;
+position: absolute;
+left: 60%;
+bottom: 15%;
+animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+     opacity: 0;
+  }
+  60% {
+      opacity: 0.34;
+  }
+  90% {
+    opacity: 1;
+  }
+}
+
+@keyframes textAnimation {
+  0%{
+    visibility: hidden;
+  }
+  50%{
+    visibility: collapse;
+  }
+  70%{
+    visibility: visible;
+  }
+}
+
+nav{
+  font-size: 21px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+ position: sticky;
+}
+li{
+  display: inline;
+  padding-right: 12px;
+  padding-top: 20px;
+}
+li a{
+  text-decoration: none;
+  padding: 5px;
+}
+
+li a:hover {
+  background-color: rgba(66, 52, 80);
+}
+hr{
+  opacity: 0.05;
+  margin-top: 2px;
+  size: 0.5px;
+}

@@ -1,0 +1,102 @@
+*{
+    margin: 0%;
+    color: aliceblue;
+    font-family: monospace;
+    overflow: hidden;
+}
+body{
+    background-color: rgb(19, 17, 17);
+}
+h1{
+    position: relative;
+    margin-left: 10px;
+    top: 5vh;
+    font-size: 3.2em;
+    animation: heading_animate 2s linear forwards;
+}
+nav{
+    font-size: 21px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+  }
+  li{
+    display: inline;
+    padding-right: 12px;
+    padding-top: 20px;
+  }
+  li a{
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  li a:hover {
+    background-color: rgba(66, 52, 80);
+  }
+  hr{
+    opacity: 0.05;
+    margin-top: 2px;
+    size: 0.5px;
+  }
+  @keyframes animate {
+    0% {
+       opacity: 0;
+    }
+    60% {
+        opacity: 0.34;
+    }
+    90% {
+      opacity: 1;
+    }
+  }
+@keyframes heading_animate{
+    0%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+}
+
+.cards img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.cards{
+  box-shadow: 0px 1px 3px rgb(82, 81, 80);
+  width: fit-content;
+  height: max-content;
+  margin-top: 3px;
+  transition: 0.3s;
+  border: 0.1px wheat;
+  border-radius: 10px;
+  animation: animate 2s linear forwards;
+}
+.cards:hover{
+box-shadow: 1px 1px 5px wheat;
+
+}
+.card-groups{
+  margin: 0 -5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 10%;
+  margin-left: 12px;
+}
+.card-title{
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: rgb(37, 37, 37);
+}
+
